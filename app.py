@@ -2,17 +2,12 @@ import numpy as np
 import pandas as pd
 import re
 import string
-import nltk
 import spacy
 import streamlit as st
 import spacy_streamlit
 import spacy
 from textblob import TextBlob
 from gensim.summarization import summarize
-
-nltk.download('punkt')
-nltk.download('stopwords')
-sw=nltk.corpus.stopwords.words("english")
 
 nlp = spacy.load("en_core_web_sm")
 
