@@ -34,14 +34,14 @@ with st.sidebar:
 
 if raw_text is not None:
     if choice == "Sentence Segmentation":
-            l = []
-            if st.button("Segmentize"):
-                st.write(f""" There are **{len(list(doc.sents))} Sentences** in this text dataset.""")
-                for sent in doc.sents:
-                     l.append(sent)
-                d={"Sentences":l}
-                df=pd.DataFrame(data=d)
-                st.write(df)
+        l = []
+        if st.button("Segmentize"):
+            st.write(f""" There are **{len(list(doc.sents))} Sentences** in this text dataset.""")
+            for sent in doc.sents:
+                l.append(sent)
+            d={"Sentences":l}
+            df=pd.DataFrame(data=d)
+            st.write(df)
 
     if choice == "Tokenization":
         if st.button("Tokenize"):
