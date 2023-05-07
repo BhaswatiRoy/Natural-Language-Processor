@@ -21,7 +21,7 @@ with st.sidebar:
     nav_list = ["Sentence Segmentation", "Tokenization", "POS Tagging", "Lemmatization", "Name Entity Recognition",
                "Summarization", "Sentiment Analysis"]
     choice = st.radio(label="Go to", options=nav_list, index=0)
-    with st.expander(label="Developed By", expanded=False):
+    with st.beta_expander(label="Developed By", expanded=False):
         st.markdown("""
             #### Bhaswati Roy 
             #### Arya Gupta
